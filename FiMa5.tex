@@ -206,11 +206,162 @@
 
 \begin{itemize}
 	\item Lagrange-Funktion f\"ur Formulierung 2: \\ $L(x, \lambda) = tx^T \mu - \frac{1}{2} x^T Cx - \lambda (x^T e - 1)$ 
+	\item $\sigma^2 = \sigma_0^2 + \frac{1}{\alpha_1}(\mu - \mu_0)^2$
+	\item $\mu = \mu_0 \pm \sqrt{\alpha_1 (\sigma^2 - \sigma_0^2) }$
 \end{itemize}
 
-Fallstudie? \\
+
 
 \subsection{Portfolioselektion}
+
+\begin{itemize}
+	\item Trade-Off zwischen Risiko und Rendite, d.h. Selektion einer charakteristischen $(\sigma, \mu)$-Position auf dem effizienten Rand
+	\item Spezifizierung einer EV-Pr\"aferenzfunktion: $\mathcal{U}(R)=H(\mathbb{E}[R], \sigma(R))$
+	\item Optimierungsproblem: $H(\mu, \sigma) = V(x_1,...,x_n) \rightarrow max$, Nebenbed.: $(\sigma, \mu) \in M, (x_1,...,x_n) \in D$ mit M Menge der zul\"assigen $(\mu, \sigma)$-Positionen bzw. $D$ die Menge der zul\"assigen Investmentgewichte
+\end{itemize}
+
+\subsection{Probleme des Markowitz-Ansatzes}
+
+\begin{itemize}
+	\item Markowitz-Basismodell beruht auf Risikoma{\ss} Standardabweichung (vor allem f\"ur symmetrische Verteilungen, in der Praxis aber oft signifikante Schiefe vorhanden)
+	\item Optimierte Portfolios besitzen oftmals extreme Allokationen (hohe Leerverkaufspositionen oder geringe Diversifikation, optimale Portfolios \"ubergewichten Assets, die hohe gesch\"atzte erwartete Renditen und geringe Varianzen aufweisen)
+	\item Optimierung sehr sensitiv bez\"uglich Inputdaten
+\end{itemize}
+
+\section{Alternative Ans\"atze der Portfoliooptimierung}
+
+\begin{itemize}
+	\item Markowitz-Modell: Standardabweichung als Risikoma{\ss}
+	\item jetzt andere Risikoma{\ss}e verwenden
+	\item Value at Risk:
+	\begin{itemize}
+		\item nicht subadditiv
+		\item Portfoliorisiko $V@R_{\lambda}(R_P(x))$ i.A. keine konvexe Funktion
+	\end{itemize}
+	\item Average Value at Risk
+	\begin{itemize}
+		\item lageabh\"angiges Risikoma{\ss} (auch Mean-AV@R und Mean-V@R in der Literatur betrachtet)
+		\item Generelle Form: $AV@R_{\lambda}(R_P(x)) \rightarrow min$
+		\item Nebenbedingungen:
+		\item[1.] $E[R_P(x)] = r$
+		\item[2.] $x^Te = 1$
+		\item[3.] $x \geq 0$ 
+		\item $AV@R_{\lambda}(X) = V@R_{\lambda}(X) + \frac{1}{\lambda} \mathbb{E}[(-X-V@R_{\lambda}(X))^{+}]$
+	\end{itemize}
+\end{itemize}
+
+\section{Asset Pricing}
+
+\subsection{Portfoliotheorie mit sicherer Anlage}
+
+\subsubsection{Erweiterung des Anlagespektrums}
+\begin{itemize}
+	\item Risikolose Anlage (Renditevarianz = 0) zum sicheren Zins $r_0$
+	\item vollkommener Kapitalmarkt: zum Zins $r_0$ k\"onnen beliebige Betr\"age angelegt oder aufgenommen werden
+\end{itemize}
+
+\subsubsection{Elementare Analyse}
+\begin{itemize}
+	\item fixiere riskantes Portfolio $P \in M$, d.h. Portfolio aus der Menge der durch Aktienmischung realisierbaren Portfolios
+	\item Betrachte Portfolio, das z.T. in sichere Anlagen investiert und zum Teil in $P$
+	\item $R_P$ ist die Rendite von $P$
+	\item $0 \leq x \leq \infty$ anteilige Investition in $P$
+	\item $-\infty < 1-x \leq 1$ anteilige in Investition in sichere Anlage
+	\item Rendite gesamt: $R=xR_P + (1-x)r_0$
+	\item $\mu = r_0+x(\mu_P - r_0)$
+	\item $\sigma^2 = x^2 \sigma_P^2$
+	\item[$\Rightarrow$] $\mu = r_0 + \frac{\mu_P-r_0}{\sigma_P}\sigma$
+	\item Menge aller effizienten bzw. optimalen Portfolios ist eine Gerade (Tangentialgerade an den bisherigen effizienten Rand 
+\end{itemize}
+
+\subsection{Capital Asset Pricing Model}
+
+\subsubsection{Pr\"amissen des CAPM}
+\begin{itemize}
+	\item Fall $r_0 < \mu_0$
+	\item Es gibt $m$ EV-Investoren mit Wertpapierbudgets $V_i >0$, $V = \sum_{i=1}^m V_i$
+	\item alle Investoren sch\"atzen $r_0$, $\mathbb{E}[R_i]$, $Var(R_i)$ und $Cov(R_i,R_j)$ gleich ein
+	\item Marktgleichgewicht (Angebot = Nachfrage)
+\end{itemize}
+
+\subsubsection{Marktportfolio}
+\begin{itemize}
+	\item jeder Investor erwirbt EV-effizientes Portfolio, Anteil $\lambda_i$ des Budgets $V_i$ in Tangentialportfolio, Rest ($1-\lambda_i$) in sichere Anlage
+	\item Nachfrageportfolio des Marktes nach Aktien: $(\lambda^T V)x_T$
+	\item Angebotsportfolio: alle Aktien, die zu $t=0$ zu Marktwerten bewertet werden
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/Marktportfolio.png}
+\end{figure}
+
+\subsubsection{CAPM-Analytik}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/CAPMAnalytik.png}
+\end{figure}
+
+\subsubsection{Hauptresultate des CAPM}
+
+\begin{itemize}
+	\item Menge aller optimalen Portfolios $R$ (Kapitalmarktlinie): $\mathbb{E}[R] = r_0 + \frac{\mathbb{E}[R_M] - r_0}{\sigma(R_M)}\sigma(R)$
+	\item Menge aller optimalen Portfolios $R$ (Wertpapiermarktlinie): $\mathbb{E}[R] = r_0 + \beta_R(\mathbb{E}[R_M] - r_0)$ mit $\beta_R = \frac{Cov(R,R_M)}{Var(R_M)}$
+	\item Preisgleichung $P= \frac{\mathbb{E}[V]}{1+r_0+\beta(\mathbb{E}[R_M]-r_0)}$ 
+	\item $P$ der anf\"anglichen Preisen eines Titels mit zufallsabh\"angigem Endwert $V$ und korrespondierender Einperiodenrendite $R$
+	\item $r_0$ sicherer Zins
+	\item $R_M$ Rendite des Marktportfolios
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

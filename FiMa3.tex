@@ -180,6 +180,22 @@
 	\item Short Rate zum Zeitpunkt $t$: Zins f\"ur kurzfristige Anlage $r = f_t(t) = lim_{T \downarrow t} r_t^s(T)$
 \end{itemize}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/RisikoneutraleBewertung.png}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/SpotRate.png}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/FwdRate.png}
+\end{figure}
+
+
 
 \section{Zinsprodukte}
 
@@ -232,9 +248,15 @@
 
 \begin{itemize}
 	\item Absolute Duration: $DUR^A(r):= -P'(r) = \frac{1}{1+r} \sum_{t=1}^T t Z_t(1+r)^{-t}$
+	\item Absolute Duration ist ein approximatives Ma{\ss} f\"ur die Kurs\"anderung bei absoluter Zins\"anderung: $\Delta P(r) \approx -DUR^A(r) \cdot \Delta r$
+	\item Absolute Duration mit Konvexit\"at: $\Delta P(r) \approx -DUR^A(r) \cdot \Delta r + \frac{1}{2} CONV^A(r) \cdot (\Delta r)^2$
+	\item $CONV^A(r) = P''(r)$
 	\item Erste Ableitung der Barwertfunktion mit negativem Vorzeichen
 	\item Zins\"anderungsrisiko ist gr\"o{\ss}er, wenn Duration gr\"o{\ss}er
 	\item Modifizierte Duration: $DUR^M(r) := \frac{DUR^A}{P(r)} = \frac{P'(r)}{P(r)} = (\frac{1}{1+r}  \sum_{t=1}^T tZ_t(1+r)^{-t}) / P(r)$
+	\item Modifizierte Duration ist ein approximatives Ma{\ss} f\"ur die relative Kurs\"anderung bei absoluter Zins\"anderung: $\frac{\Delta P(r)}{P(r)} \approx -DUR^M(r) \cdot \Delta r$
+	\item Modifizierte (Relative) Konvexit\"at: $\frac{\Delta P(r)}{P(r)} \approx -DUR^M(r) \cdot \Delta r + \frac{1}{2} CONV(r) \cdot (\Delta r)^2$
+	\item $CONV(r) = \frac{P''(r)}{P(r)}$
 	\item Duration von 3 Faktoren beeinflusst:
 	\begin{itemize}
 		\item Laufzeit der Bonds
@@ -250,6 +272,23 @@
 \end{itemize}
 
 \subsection{Komplexere Zinsprodukte}
+
+\subsubsection{Forward-Kontrakt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/FwdKontrakt1.png}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/FwdKontrakt2.png}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/FwdKontrakt3.png}
+\end{figure}
 
 \subsubsection{\"Uberblick Zinsswap}
 
@@ -318,11 +357,15 @@
 \includegraphics[width=\textwidth]{Bilder/SatzArbitragefreiheit.png}
 \end{figure}
 
-\section{Vom Binomialmodell zum Black-Scholes-Modell}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/LookbackPut.png}
+\end{figure}
 
-\subsection{Konvergenz gegen den Black-Scholes-Preis}
 
-?
+
+
+
 
 
 
