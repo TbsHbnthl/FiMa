@@ -461,8 +461,9 @@ der Zufallszahlung $X$ vorzieht, formal: $E[u(X)]<u(E[X])$
 
 \subsubsection{Definition Sicherheitsäquivalent}
 Das Sicherheitsäquivalent einer Zufallsvariable X ist derjenige deterministische
-Wert $s(X)$, der zu $X$ nutzenäquivalent ist. Formal: $ u(s(X)) = E[u(X)]$
+Wert $s(X)$, der zu $X$ nutzenäquivalent ist. Formal: $ u(s(X)) = E[u(X)]$ \\
 
+Arrow-Pratt-Maß: $r(x) := -\frac{u''(x)}{u'(x)}$
 
 \subsubsection{Risiko/Wert-Modelle}
 
@@ -542,6 +543,8 @@ Realistischer: Annahme der Arbitragefreiheit des Marktes
 
 
 \subsection{Finanzmarktmodelle und Abwesenheit von Arbitrage}
+
+Put-Call Parität: $C_0^{Call} - C_0^{Put} = S_0 - K$
 
 \subsubsection{Finanzmarktmodell mit einer Periode}
 \begin{itemize}
@@ -796,7 +799,6 @@ der perfekten Replikation sein. Anderenfalls gibt es Arbitrage!
 %KAPITEL 3
 
 %----------------------------------------------------------------------
-\chapter{Analyse prim\"arer Finanztitel und Bewertung von Derivaten}
 
 \section{Grundlagen der Zinstheorie}
 
@@ -847,6 +849,22 @@ der perfekten Replikation sein. Anderenfalls gibt es Arbitrage!
 	\item Arbitragefreiheit: Ein Kapitalbetrag, der in $t$ bis $T$ zur Spot Rate angelegt wird, muss zur Zeit $T$ einen identischen Endwert aufweisen wie der Kapitalbetrag, der revolvierend jeweils \"uber 1 Jahr zu den in $t$ g\"ultigen Forward Rates angelegt wird.
 	\item Short Rate zum Zeitpunkt $t$: Zins f\"ur kurzfristige Anlage $r = f_t(t) = lim_{T \downarrow t} r_t^s(T)$
 \end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/RisikoneutraleBewertung.png}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/SpotRate.png}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/FwdRate.png}
+\end{figure}
+
 
 
 \section{Zinsprodukte}
@@ -900,9 +918,15 @@ der perfekten Replikation sein. Anderenfalls gibt es Arbitrage!
 
 \begin{itemize}
 	\item Absolute Duration: $DUR^A(r):= -P'(r) = \frac{1}{1+r} \sum_{t=1}^T t Z_t(1+r)^{-t}$
+	\item Absolute Duration ist ein approximatives Ma{\ss} f\"ur die Kurs\"anderung bei absoluter Zins\"anderung: $\Delta P(r) \approx -DUR^A(r) \cdot \Delta r$
+	\item Absolute Duration mit Konvexit\"at: $\Delta P(r) \approx -DUR^A(r) \cdot \Delta r + \frac{1}{2} CONV^A(r) \cdot (\Delta r)^2$
+	\item $CONV^A(r) = P''(r)$
 	\item Erste Ableitung der Barwertfunktion mit negativem Vorzeichen
 	\item Zins\"anderungsrisiko ist gr\"o{\ss}er, wenn Duration gr\"o{\ss}er
 	\item Modifizierte Duration: $DUR^M(r) := \frac{DUR^A}{P(r)} = \frac{P'(r)}{P(r)} = (\frac{1}{1+r}  \sum_{t=1}^T tZ_t(1+r)^{-t}) / P(r)$
+	\item Modifizierte Duration ist ein approximatives Ma{\ss} f\"ur die relative Kurs\"anderung bei absoluter Zins\"anderung: $\frac{\Delta P(r)}{P(r)} \approx -DUR^M(r) \cdot \Delta r$
+	\item Modifizierte (Relative) Konvexit\"at: $\frac{\Delta P(r)}{P(r)} \approx -DUR^M(r) \cdot \Delta r + \frac{1}{2} CONV(r) \cdot (\Delta r)^2$
+	\item $CONV(r) = \frac{P''(r)}{P(r)}$
 	\item Duration von 3 Faktoren beeinflusst:
 	\begin{itemize}
 		\item Laufzeit der Bonds
@@ -918,6 +942,23 @@ der perfekten Replikation sein. Anderenfalls gibt es Arbitrage!
 \end{itemize}
 
 \subsection{Komplexere Zinsprodukte}
+
+\subsubsection{Forward-Kontrakt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/FwdKontrakt1.png}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/FwdKontrakt2.png}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/FwdKontrakt3.png}
+\end{figure}
 
 \subsubsection{\"Uberblick Zinsswap}
 
@@ -986,11 +1027,26 @@ der perfekten Replikation sein. Anderenfalls gibt es Arbitrage!
 \includegraphics[width=\textwidth]{Bilder/SatzArbitragefreiheit.png}
 \end{figure}
 
-\section{Vom Binomialmodell zum Black-Scholes-Modell}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/LookbackPut.png}
+\end{figure}
 
-\subsection{Konvergenz gegen den Black-Scholes-Preis}
 
-?
+
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------
+
+%KAPITEL 4
+
+%----------------------------------------------------------------------
 
 
 
@@ -1139,6 +1195,11 @@ erhöhen sollte, ist folgende Anforderung natürlich:
 \begin{equation}
 \rho(\lambda X + (1-\lambda)Y) \leq max \{ \rho(X), \rho(Y)\} \text{ für } X,Y \in \mathcal{X} \text{ und } \lambda\in (0,1)
 \end{equation}
+\item Die Akzeptanzmenge $\mathcal{A}$ is konvex.
+\item $\rho$ ist ein konvexes Funktional $\mathcal{X}$:
+\begin{equation}
+\rho(\lambda X + (1-\lambda ) Y ) \leq \lambda\rho (X) + (1-\lambda) \rho(Y) \text{ für } X,Y \in \mathcal{X} \text{ und } \lambda\in (0,1)
+\end{equation}
 \end{itemize}
 
 
@@ -1164,9 +1225,26 @@ homogen ist, d. h. es gilt $\rho(\lambda X) = \lambda\rho(X)$ für alle $X \in \
 	\includegraphics[width=0.9 \textwidth]{Bilder/verteilungsbasiert.png}
 \end{figure}
 
+\subsubsection{Value at Risk - Normalverteilung}
 
-\textbf{FOLIE 41 bis 65 Beispiele ??????}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9 \textwidth]{Bilder/VaR_Normal.png}
+\end{figure}
 
+
+\subsubsection{Average Value at Risk}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9 \textwidth]{Bilder/AVaR.png}
+\end{figure}
+
+
+\subsection{Tail Value ar Risk}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9 \textwidth]{Bilder/TVaR.png}
+\end{figure}
 
 \subsection{Berechnung des erforderlichen Risikokapitals mit Risikomaßen}
 
@@ -1189,6 +1267,10 @@ Wahrscheinlichkeit $99,5 \%$ vorzubeugen
 	\centering
 	\includegraphics[width=0.9 \textwidth]{Bilder/SCR.png}
 \end{figure}
+\item Mean Value at Risk der Basiseigenmittel $E_1$:
+\begin{equation}
+SCR(E_1) = VaR_{0,005}(E_1- E(E_1))
+\end{equation}
 \item Standardformel:
 \begin{itemize}
 \item Modularer Aufbau: operationelles Risiko und
@@ -1206,6 +1288,15 @@ Basissolvabilitätskapitalanforderung
 \end{itemize}
 
 
+
+
+
+
+%----------------------------------------------------------------------
+
+%KAPITEL 5
+
+%----------------------------------------------------------------------
 
 
 
@@ -1287,11 +1378,115 @@ Basissolvabilitätskapitalanforderung
 
 \begin{itemize}
 	\item Lagrange-Funktion f\"ur Formulierung 2: \\ $L(x, \lambda) = tx^T \mu - \frac{1}{2} x^T Cx - \lambda (x^T e - 1)$ 
+	\item $\sigma^2 = \sigma_0^2 + \frac{1}{\alpha_1}(\mu - \mu_0)^2$
+	\item $\mu = \mu_0 \pm \sqrt{\alpha_1 (\sigma^2 - \sigma_0^2) }$
 \end{itemize}
 
-Fallstudie? \\
+
 
 \subsection{Portfolioselektion}
+
+\begin{itemize}
+	\item Trade-Off zwischen Risiko und Rendite, d.h. Selektion einer charakteristischen $(\sigma, \mu)$-Position auf dem effizienten Rand
+	\item Spezifizierung einer EV-Pr\"aferenzfunktion: $\mathcal{U}(R)=H(\mathbb{E}[R], \sigma(R))$
+	\item Optimierungsproblem: $H(\mu, \sigma) = V(x_1,...,x_n) \rightarrow max$, Nebenbed.: $(\sigma, \mu) \in M, (x_1,...,x_n) \in D$ mit M Menge der zul\"assigen $(\mu, \sigma)$-Positionen bzw. $D$ die Menge der zul\"assigen Investmentgewichte
+\end{itemize}
+
+\subsection{Probleme des Markowitz-Ansatzes}
+
+\begin{itemize}
+	\item Markowitz-Basismodell beruht auf Risikoma{\ss} Standardabweichung (vor allem f\"ur symmetrische Verteilungen, in der Praxis aber oft signifikante Schiefe vorhanden)
+	\item Optimierte Portfolios besitzen oftmals extreme Allokationen (hohe Leerverkaufspositionen oder geringe Diversifikation, optimale Portfolios \"ubergewichten Assets, die hohe gesch\"atzte erwartete Renditen und geringe Varianzen aufweisen)
+	\item Optimierung sehr sensitiv bez\"uglich Inputdaten
+\end{itemize}
+
+\section{Alternative Ans\"atze der Portfoliooptimierung}
+
+\begin{itemize}
+	\item Markowitz-Modell: Standardabweichung als Risikoma{\ss}
+	\item jetzt andere Risikoma{\ss}e verwenden
+	\item Value at Risk:
+	\begin{itemize}
+		\item nicht subadditiv
+		\item Portfoliorisiko $V@R_{\lambda}(R_P(x))$ i.A. keine konvexe Funktion
+	\end{itemize}
+	\item Average Value at Risk
+	\begin{itemize}
+		\item lageabh\"angiges Risikoma{\ss} (auch Mean-AV@R und Mean-V@R in der Literatur betrachtet)
+		\item Generelle Form: $AV@R_{\lambda}(R_P(x)) \rightarrow min$
+		\item Nebenbedingungen:
+		\item[1.] $E[R_P(x)] = r$
+		\item[2.] $x^Te = 1$
+		\item[3.] $x \geq 0$ 
+		\item $AV@R_{\lambda}(X) = V@R_{\lambda}(X) + \frac{1}{\lambda} \mathbb{E}[(-X-V@R_{\lambda}(X))^{+}]$
+	\end{itemize}
+\end{itemize}
+
+\section{Asset Pricing}
+
+\subsection{Portfoliotheorie mit sicherer Anlage}
+
+\subsubsection{Erweiterung des Anlagespektrums}
+\begin{itemize}
+	\item Risikolose Anlage (Renditevarianz = 0) zum sicheren Zins $r_0$
+	\item vollkommener Kapitalmarkt: zum Zins $r_0$ k\"onnen beliebige Betr\"age angelegt oder aufgenommen werden
+\end{itemize}
+
+\subsubsection{Elementare Analyse}
+\begin{itemize}
+	\item fixiere riskantes Portfolio $P \in M$, d.h. Portfolio aus der Menge der durch Aktienmischung realisierbaren Portfolios
+	\item Betrachte Portfolio, das z.T. in sichere Anlagen investiert und zum Teil in $P$
+	\item $R_P$ ist die Rendite von $P$
+	\item $0 \leq x \leq \infty$ anteilige Investition in $P$
+	\item $-\infty < 1-x \leq 1$ anteilige in Investition in sichere Anlage
+	\item Rendite gesamt: $R=xR_P + (1-x)r_0$
+	\item $\mu = r_0+x(\mu_P - r_0)$
+	\item $\sigma^2 = x^2 \sigma_P^2$
+	\item[$\Rightarrow$] $\mu = r_0 + \frac{\mu_P-r_0}{\sigma_P}\sigma$
+	\item Menge aller effizienten bzw. optimalen Portfolios ist eine Gerade (Tangentialgerade an den bisherigen effizienten Rand 
+\end{itemize}
+
+\subsection{Capital Asset Pricing Model}
+
+\subsubsection{Pr\"amissen des CAPM}
+\begin{itemize}
+	\item Fall $r_0 < \mu_0$
+	\item Es gibt $m$ EV-Investoren mit Wertpapierbudgets $V_i >0$, $V = \sum_{i=1}^m V_i$
+	\item alle Investoren sch\"atzen $r_0$, $\mathbb{E}[R_i]$, $Var(R_i)$ und $Cov(R_i,R_j)$ gleich ein
+	\item Marktgleichgewicht (Angebot = Nachfrage)
+\end{itemize}
+
+\subsubsection{Marktportfolio}
+\begin{itemize}
+	\item jeder Investor erwirbt EV-effizientes Portfolio, Anteil $\lambda_i$ des Budgets $V_i$ in Tangentialportfolio, Rest ($1-\lambda_i$) in sichere Anlage
+	\item Nachfrageportfolio des Marktes nach Aktien: $(\lambda^T V)x_T$
+	\item Angebotsportfolio: alle Aktien, die zu $t=0$ zu Marktwerten bewertet werden
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/Marktportfolio.png}
+\end{figure}
+
+\subsubsection{CAPM-Analytik}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Bilder/CAPMAnalytik.png}
+\end{figure}
+
+\subsubsection{Hauptresultate des CAPM}
+
+\begin{itemize}
+	\item Menge aller optimalen Portfolios $R$ (Kapitalmarktlinie): $\mathbb{E}[R] = r_0 + \frac{\mathbb{E}[R_M] - r_0}{\sigma(R_M)}\sigma(R)$
+	\item Menge aller optimalen Portfolios $R$ (Wertpapiermarktlinie): $\mathbb{E}[R] = r_0 + \beta_R(\mathbb{E}[R_M] - r_0)$ mit $\beta_R = \frac{Cov(R,R_M)}{Var(R_M)}$
+	\item Preisgleichung $P= \frac{\mathbb{E}[V]}{1+r_0+\beta(\mathbb{E}[R_M]-r_0)}$ 
+	\item $P$ der anf\"anglichen Preisen eines Titels mit zufallsabh\"angigem Endwert $V$ und korrespondierender Einperiodenrendite $R$
+	\item $r_0$ sicherer Zins
+	\item $R_M$ Rendite des Marktportfolios
+\end{itemize}
+
+
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.3.2)  30 SEP 2023 09:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.3.2)  4 OCT 2023 17:26
 entering extended mode
 **./Zsmf.tex
 (Zsmf.tex
@@ -881,7 +881,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.66 ...lexere Zinsprodukte}{24}{subsection.3.2.3}
+l.68 ...aten in Binomialb\"aumen}{28}{section.2.7}
                                                   % [1
 
 ])
@@ -929,7 +929,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
-<Bilder/Immobilien.png, id=243, 475.7775pt x 286.82156pt>
+<Bilder/Immobilien.png, id=233, 475.7775pt x 286.82156pt>
 File: Bilder/Immobilien.png Graphic file (type png)
 <use Bilder/Immobilien.png>
 Package pdftex.def Info: Bilder/Immobilien.png  used on input line 254.
@@ -944,7 +944,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6 <./Bilder/Immobilien.png>]
-<Bilder/Finanzmarkt.png, id=252, 508.90125pt x 268.00125pt>
+<Bilder/Finanzmarkt.png, id=242, 508.90125pt x 268.00125pt>
 File: Bilder/Finanzmarkt.png Graphic file (type png)
 <use Bilder/Finanzmarkt.png>
 Package pdftex.def Info: Bilder/Finanzmarkt.png  used on input line 302.
@@ -968,17 +968,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8 <./Bilder/Finanzmarkt.png>]
-<Bilder/NotationOption.png, id=265, 380.92313pt x 189.70876pt>
+<Bilder/NotationOption.png, id=255, 380.92313pt x 189.70876pt>
 File: Bilder/NotationOption.png Graphic file (type png)
 <use Bilder/NotationOption.png>
 Package pdftex.def Info: Bilder/NotationOption.png  used on input line 349.
 (pdftex.def)             Requested size: 298.75262pt x 148.79143pt.
-<Bilder/Kaufoption.png, id=266, 483.30562pt x 268.00125pt>
+<Bilder/Kaufoption.png, id=256, 483.30562pt x 268.00125pt>
 File: Bilder/Kaufoption.png Graphic file (type png)
 <use Bilder/Kaufoption.png>
 Package pdftex.def Info: Bilder/Kaufoption.png  used on input line 360.
 (pdftex.def)             Requested size: 298.75262pt x 165.66832pt.
-<Bilder/Verkaufoption.png, id=267, 482.55281pt x 275.52937pt>
+<Bilder/Verkaufoption.png, id=257, 482.55281pt x 275.52937pt>
 File: Bilder/Verkaufoption.png Graphic file (type png)
 <use Bilder/Verkaufoption.png>
 Package pdftex.def Info: Bilder/Verkaufoption.png  used on input line 378.
@@ -993,7 +993,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9 <./Bilder/NotationOption.png> <./Bilder/Kaufoption.png>]
-<Bilder/ImGeld.png, id=277, 521.69907pt x 95.6072pt>
+<Bilder/ImGeld.png, id=267, 521.69907pt x 95.6072pt>
 File: Bilder/ImGeld.png Graphic file (type png)
 <use Bilder/ImGeld.png>
 Package pdftex.def Info: Bilder/ImGeld.png  used on input line 391.
@@ -1030,7 +1030,12 @@ Overfull \hbox (3.10222pt too wide) in paragraph at lines 463--465
  []
 
 
-Overfull \hbox (1.62874pt too wide) in paragraph at lines 469--471
+Underfull \hbox (badness 10000) in paragraph at lines 463--465
+
+ []
+
+
+Overfull \hbox (1.62874pt too wide) in paragraph at lines 470--472
 \T1/ptm/m/n/12 Risiko/Wert-Modelle stel-len kon-zep-tio-nell ei-ne Ver-all-ge-m
 ei-ne-rung des $\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 )$\T1/ptm/m/n/12 -Prin
 zips dar.
@@ -1054,7 +1059,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13]
-Overfull \hbox (15.57492pt too wide) in paragraph at lines 541--541
+Overfull \hbox (15.57492pt too wide) in paragraph at lines 542--542
 |[]\T1/ptm/b/n/17.28 Grundprinzipien der Fi-nanz-ma-the-ma-tik: Ein-pe-ri-oden-
 
  []
@@ -1070,10 +1075,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [14]
 Missing character: There is no d in font msbm10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--599
-
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1083,14 +1084,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15]
+Underfull \hbox (badness 10000) in paragraph at lines 601--602
 
-LaTeX Warning: Command \ss invalid in math mode on input line 604.
+ []
+
+
+LaTeX Warning: Command \ss invalid in math mode on input line 607.
 
 Missing character: There is no � in font zptmcm7t!
-<Bilder/Marktmodell.png, id=322, 819.8128pt x 593.96906pt>
+<Bilder/Marktmodell.png, id=312, 819.8128pt x 593.96906pt>
 File: Bilder/Marktmodell.png Graphic file (type png)
 <use Bilder/Marktmodell.png>
-Package pdftex.def Info: Bilder/Marktmodell.png  used on input line 613.
+Package pdftex.def Info: Bilder/Marktmodell.png  used on input line 616.
 (pdftex.def)             Requested size: 426.79134pt x 309.22821pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1110,15 +1115,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [17]
-<Bilder/Arbitragefrei.png, id=341, 712.91344pt x 174.6525pt>
+<Bilder/Arbitragefrei.png, id=331, 712.91344pt x 174.6525pt>
 File: Bilder/Arbitragefrei.png Graphic file (type png)
 <use Bilder/Arbitragefrei.png>
-Package pdftex.def Info: Bilder/Arbitragefrei.png  used on input line 685.
+Package pdftex.def Info: Bilder/Arbitragefrei.png  used on input line 688.
 (pdftex.def)             Requested size: 426.79134pt x 104.55779pt.
-<Bilder/Contingent.png, id=342, 810.02625pt x 595.47469pt>
+<Bilder/Contingent.png, id=332, 810.02625pt x 595.47469pt>
 File: Bilder/Contingent.png Graphic file (type png)
 <use Bilder/Contingent.png>
-Package pdftex.def Info: Bilder/Contingent.png  used on input line 699.
+Package pdftex.def Info: Bilder/Contingent.png  used on input line 702.
 (pdftex.def)             Requested size: 426.79134pt x 313.75557pt.
 
 
@@ -1139,21 +1144,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [19 <./Bilder/Contingent.png>]
-<Bilder/Wertprozess.png, id=365, 685.05937pt x 170.88844pt>
+<Bilder/Wertprozess.png, id=354, 685.05937pt x 170.88844pt>
 File: Bilder/Wertprozess.png Graphic file (type png)
 <use Bilder/Wertprozess.png>
-Package pdftex.def Info: Bilder/Wertprozess.png  used on input line 756.
+Package pdftex.def Info: Bilder/Wertprozess.png  used on input line 759.
 (pdftex.def)             Requested size: 341.43436pt x 85.17282pt.
-<Bilder/Handelsstrategie.png, id=366, 767.86874pt x 241.65282pt>
+<Bilder/Handelsstrategie.png, id=355, 767.86874pt x 241.65282pt>
 File: Bilder/Handelsstrategie.png Graphic file (type png)
 <use Bilder/Handelsstrategie.png>
-Package pdftex.def Info: Bilder/Handelsstrategie.png  used on input line 761.
+Package pdftex.def Info: Bilder/Handelsstrategie.png  used on input line 764.
 (pdftex.def)             Requested size: 341.43436pt x 107.4522pt.
-<Bilder/Martingalmaß.png, id=367, 766.36313pt x 331.2375pt>
-File: Bilder/Martingalmaß.png Graphic file (type png)
-<use Bilder/Martingalmaß.png>
-Package pdftex.def Info: Bilder/Martingalmaß.png  used on input line 781.
-(pdftex.def)             Requested size: 341.43436pt x 147.57458pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1164,6 +1164,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [20 <./Bilder/Wertprozess.png> <./Bilder/Handelsstrategie.png>]
+<Bilder/Martingalmaß.png, id=366, 766.36313pt x 331.2375pt>
+File: Bilder/Martingalmaß.png Graphic file (type png)
+<use Bilder/Martingalmaß.png>
+Package pdftex.def Info: Bilder/Martingalmaß.png  used on input line 784.
+(pdftex.def)             Requested size: 341.43436pt x 147.57458pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1173,30 +1179,61 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [21 <./Bilder/Martingalmaß.png>]
-Kapitel 3.
-[22
+<Bilder/RisikoneutraleBewertung.png, id=374, 1394.20876pt x 668.4975pt>
+File: Bilder/RisikoneutraleBewertung.png Graphic file (type png)
+<use Bilder/RisikoneutraleBewertung.png>
+Package pdftex.def Info: Bilder/RisikoneutraleBewertung.png  used on input line
+ 855.
+(pdftex.def)             Requested size: 426.79134pt x 204.64117pt.
 
-]
-Overfull \hbox (4.68333pt too wide) in paragraph at lines 861--862
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[22]
+<Bilder/SpotRate.png, id=379, 1443.3925pt x 778.91pt>
+File: Bilder/SpotRate.png Graphic file (type png)
+<use Bilder/SpotRate.png>
+Package pdftex.def Info: Bilder/SpotRate.png  used on input line 860.
+(pdftex.def)             Requested size: 426.79134pt x 230.3113pt.
+<Bilder/FwdRate.png, id=380, 1490.56876pt x 814.04124pt>
+File: Bilder/FwdRate.png Graphic file (type png)
+<use Bilder/FwdRate.png>
+Package pdftex.def Info: Bilder/FwdRate.png  used on input line 865.
+(pdftex.def)             Requested size: 426.79134pt x 233.07239pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[23 <./Bilder/RisikoneutraleBewertung.png> <./Bilder/SpotRate.png>]
+Overfull \hbox (4.68333pt too wide) in paragraph at lines 879--880
 []\T1/ptm/m/n/12 deterministischen bei Ver-trags-ab-schluss fest-ge-leg-ten Ku-
 pon-zah-lun-gen $\OML/ztmcm/m/it/12 c[]; :::; c[]$ 
  []
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[23]
-<Bilder/Zinsstrukturkurve.png, id=392, 1496.59125pt x 793.96625pt>
+<Bilder/Zinsstrukturkurve.png, id=389, 1496.59125pt x 793.96625pt>
 File: Bilder/Zinsstrukturkurve.png Graphic file (type png)
 <use Bilder/Zinsstrukturkurve.png>
-Package pdftex.def Info: Bilder/Zinsstrukturkurve.png  used on input line 880.
+Package pdftex.def Info: Bilder/Zinsstrukturkurve.png  used on input line 898.
 (pdftex.def)             Requested size: 426.79134pt x 226.41599pt.
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[24 <./Bilder/FwdRate.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1205,7 +1242,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[24 <./Bilder/Zinsstrukturkurve.png>]
+[25 <./Bilder/Zinsstrukturkurve.png>]
+<Bilder/FwdKontrakt1.png, id=405, 1478.52374pt x 689.57625pt>
+File: Bilder/FwdKontrakt1.png Graphic file (type png)
+<use Bilder/FwdKontrakt1.png>
+Package pdftex.def Info: Bilder/FwdKontrakt1.png  used on input line 950.
+(pdftex.def)             Requested size: 426.79134pt x 199.04604pt.
+<Bilder/FwdKontrakt2.png, id=406, 1485.55pt x 970.62625pt>
+File: Bilder/FwdKontrakt2.png Graphic file (type png)
+<use Bilder/FwdKontrakt2.png>
+Package pdftex.def Info: Bilder/FwdKontrakt2.png  used on input line 955.
+(pdftex.def)             Requested size: 426.79134pt x 278.85294pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1214,16 +1262,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25]
-Overfull \hbox (0.21059pt too wide) in paragraph at lines 938--938
+[26 <./Bilder/FwdKontrakt1.png>]
+<Bilder/FwdKontrakt3.png, id=414, 1434.35875pt x 795.97375pt>
+File: Bilder/FwdKontrakt3.png Graphic file (type png)
+<use Bilder/FwdKontrakt3.png>
+Package pdftex.def Info: Bilder/FwdKontrakt3.png  used on input line 960.
+(pdftex.def)             Requested size: 426.79134pt x 236.83853pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[27 <./Bilder/FwdKontrakt2.png> <./Bilder/FwdKontrakt3.png>]
+Overfull \hbox (0.21059pt too wide) in paragraph at lines 979--979
 |[]\T1/ptm/b/n/17.28 Risikoneutrale Be-wer-tung von Ak-ti-en-de-ri-va-ten in Bi
 -
  []
 
-<Bilder/AusblickOptionen.png, id=407, 1514.65875pt x 1100.11pt>
+<Bilder/AusblickOptionen.png, id=424, 1514.65875pt x 1100.11pt>
 File: Bilder/AusblickOptionen.png Graphic file (type png)
 <use Bilder/AusblickOptionen.png>
-Package pdftex.def Info: Bilder/AusblickOptionen.png  used on input line 954.
+Package pdftex.def Info: Bilder/AusblickOptionen.png  used on input line 995.
 (pdftex.def)             Requested size: 426.79134pt x 309.9759pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1233,19 +1296,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26 <./Bilder/AusblickOptionen.png>]
-<Bilder/BinomialmodellUpDown.png, id=414, 931.48pt x 542.025pt>
+[28]
+<Bilder/BinomialmodellUpDown.png, id=429, 931.48pt x 542.025pt>
 File: Bilder/BinomialmodellUpDown.png Graphic file (type png)
 <use Bilder/BinomialmodellUpDown.png>
-Package pdftex.def Info: Bilder/BinomialmodellUpDown.png  used on input line 97
-6.
+Package pdftex.def Info: Bilder/BinomialmodellUpDown.png  used on input line 10
+17.
 (pdftex.def)             Requested size: 426.79134pt x 248.35031pt.
-<Bilder/FormaleKonstruktion.png, id=415, 1399.2275pt x 858.20625pt>
-File: Bilder/FormaleKonstruktion.png Graphic file (type png)
-<use Bilder/FormaleKonstruktion.png>
-Package pdftex.def Info: Bilder/FormaleKonstruktion.png  used on input line 981
-.
-(pdftex.def)             Requested size: 426.79134pt x 261.75908pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1255,12 +1312,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[27 <./Bilder/BinomialmodellUpDown.png>]
-<Bilder/SatzArbitragefreiheit.png, id=424, 1487.5575pt x 974.64125pt>
+[29 <./Bilder/AusblickOptionen.png>]
+<Bilder/FormaleKonstruktion.png, id=438, 1399.2275pt x 858.20625pt>
+File: Bilder/FormaleKonstruktion.png Graphic file (type png)
+<use Bilder/FormaleKonstruktion.png>
+Package pdftex.def Info: Bilder/FormaleKonstruktion.png  used on input line 102
+2.
+(pdftex.def)             Requested size: 426.79134pt x 261.75908pt.
+<Bilder/SatzArbitragefreiheit.png, id=439, 1487.5575pt x 974.64125pt>
 File: Bilder/SatzArbitragefreiheit.png Graphic file (type png)
 <use Bilder/SatzArbitragefreiheit.png>
-Package pdftex.def Info: Bilder/SatzArbitragefreiheit.png  used on input line 9
-86.
+Package pdftex.def Info: Bilder/SatzArbitragefreiheit.png  used on input line 1
+027.
 (pdftex.def)             Requested size: 426.79134pt x 279.63461pt.
 
 
@@ -1271,20 +1334,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28 <./Bilder/FormaleKonstruktion.png> <./Bilder/SatzArbitragefreiheit.png>]
-Kapitel 4.
-[29
+[30 <./Bilder/BinomialmodellUpDown.png> <./Bilder/FormaleKonstruktion.png>]
+<Bilder/LookbackPut.png, id=449, 1402.23875pt x 1090.0725pt>
+File: Bilder/LookbackPut.png Graphic file (type png)
+<use Bilder/LookbackPut.png>
+Package pdftex.def Info: Bilder/LookbackPut.png  used on input line 1032.
+(pdftex.def)             Requested size: 426.79134pt x 331.78136pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[31 <./Bilder/SatzArbitragefreiheit.png> <./Bilder/LookbackPut.png>]
+Kapitel 3.
+[32
 
 ]
-<Bilder/Streuungsmaße.png, id=437, 819.06pt x 553.31718pt>
+<Bilder/Streuungsmaße.png, id=462, 819.06pt x 553.31718pt>
 File: Bilder/Streuungsmaße.png Graphic file (type png)
 <use Bilder/Streuungsmaße.png>
-Package pdftex.def Info: Bilder/Streuungsmaße.png  used on input line 1075.
+Package pdftex.def Info: Bilder/Streuungsmaße.png  used on input line 1131.
 (pdftex.def)             Requested size: 384.10959pt x 259.49342pt.
-<Bilder/Momente.png, id=438, 820.56563pt x 570.63188pt>
+<Bilder/Momente.png, id=463, 820.56563pt x 570.63188pt>
 File: Bilder/Momente.png Graphic file (type png)
 <use Bilder/Momente.png>
-Package pdftex.def Info: Bilder/Momente.png  used on input line 1086.
+Package pdftex.def Info: Bilder/Momente.png  used on input line 1142.
 (pdftex.def)             Requested size: 384.10959pt x 267.10863pt.
 
 
@@ -1295,7 +1373,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30]
+[33]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1304,7 +1382,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[31 <./Bilder/Streuungsmaße.png> <./Bilder/Momente.png>]
+[34 <./Bilder/Streuungsmaße.png> <./Bilder/Momente.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1313,18 +1391,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32]
-<Bilder/robust.png, id=467, 754.31813pt x 350.05782pt>
+[35]
+<Bilder/robust.png, id=491, 754.31813pt x 350.05782pt>
 File: Bilder/robust.png Graphic file (type png)
 <use Bilder/robust.png>
-Package pdftex.def Info: Bilder/robust.png  used on input line 1157.
+Package pdftex.def Info: Bilder/robust.png  used on input line 1218.
 (pdftex.def)             Requested size: 384.10959pt x 178.2547pt.
-<Bilder/verteilungsbasiert.png, id=468, 803.25093pt x 344.03531pt>
+<Bilder/verteilungsbasiert.png, id=492, 803.25093pt x 344.03531pt>
 File: Bilder/verteilungsbasiert.png Graphic file (type png)
 <use Bilder/verteilungsbasiert.png>
-Package pdftex.def Info: Bilder/verteilungsbasiert.png  used on input line 1164
+Package pdftex.def Info: Bilder/verteilungsbasiert.png  used on input line 1225
 .
 (pdftex.def)             Requested size: 384.10959pt x 164.52087pt.
+<Bilder/VaR_Normal.png, id=493, 569.87906pt x 304.13625pt>
+File: Bilder/VaR_Normal.png Graphic file (type png)
+<use Bilder/VaR_Normal.png>
+Package pdftex.def Info: Bilder/VaR_Normal.png  used on input line 1232.
+(pdftex.def)             Requested size: 384.10959pt x 204.99074pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1334,11 +1417,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33 <./Bilder/robust.png> <./Bilder/verteilungsbasiert.png>]
-<Bilder/SCR.png, id=480, 720.44156pt x 187.45032pt>
+[36 <./Bilder/robust.png> <./Bilder/verteilungsbasiert.png>]
+<Bilder/AVaR.png, id=507, 560.0925pt x 316.93407pt>
+File: Bilder/AVaR.png Graphic file (type png)
+<use Bilder/AVaR.png>
+Package pdftex.def Info: Bilder/AVaR.png  used on input line 1239.
+(pdftex.def)             Requested size: 384.10959pt x 217.35966pt.
+<Bilder/TVaR.png, id=508, 532.99126pt x 149.8097pt>
+File: Bilder/TVaR.png Graphic file (type png)
+<use Bilder/TVaR.png>
+Package pdftex.def Info: Bilder/TVaR.png  used on input line 1246.
+(pdftex.def)             Requested size: 384.10959pt x 107.96574pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[37 <./Bilder/VaR_Normal.png> <./Bilder/AVaR.png>]
+<Bilder/SCR.png, id=519, 720.44156pt x 187.45032pt>
 File: Bilder/SCR.png Graphic file (type png)
 <use Bilder/SCR.png>
-Package pdftex.def Info: Bilder/SCR.png  used on input line 1190.
+Package pdftex.def Info: Bilder/SCR.png  used on input line 1268.
 (pdftex.def)             Requested size: 384.10959pt x 99.94026pt.
 
 
@@ -1349,21 +1452,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34 <./Bilder/SCR.png>]
-Kapitel 5.
-[35
+[38 <./Bilder/TVaR.png> <./Bilder/SCR.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[39]
+Kapitel 4.
+[40
 
 ]
-<Bilder/Ausgangsdaten.png, id=496, 1353.055pt x 830.10126pt>
+<Bilder/Ausgangsdaten.png, id=542, 1353.055pt x 830.10126pt>
 File: Bilder/Ausgangsdaten.png Graphic file (type png)
 <use Bilder/Ausgangsdaten.png>
-Package pdftex.def Info: Bilder/Ausgangsdaten.png  used on input line 1261.
+Package pdftex.def Info: Bilder/Ausgangsdaten.png  used on input line 1352.
 (pdftex.def)             Requested size: 426.79134pt x 261.83794pt.
-<Bilder/Minimierungsproblem.png, id=497, 1372.12625pt x 642.4pt>
+<Bilder/Minimierungsproblem.png, id=543, 1372.12625pt x 642.4pt>
 File: Bilder/Minimierungsproblem.png Graphic file (type png)
 <use Bilder/Minimierungsproblem.png>
-Package pdftex.def Info: Bilder/Minimierungsproblem.png  used on input line 126
-8.
+Package pdftex.def Info: Bilder/Minimierungsproblem.png  used on input line 135
+9.
 (pdftex.def)             Requested size: 426.79134pt x 199.8183pt.
 
 
@@ -1374,12 +1486,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[36 <./Bilder/Ausgangsdaten.png>]
-<Bilder/alternativeFormulierungen.png, id=507, 1310.8975pt x 454.69875pt>
+[41 <./Bilder/Ausgangsdaten.png>]
+<Bilder/alternativeFormulierungen.png, id=552, 1310.8975pt x 454.69875pt>
 File: Bilder/alternativeFormulierungen.png Graphic file (type png)
 <use Bilder/alternativeFormulierungen.png>
 Package pdftex.def Info: Bilder/alternativeFormulierungen.png  used on input li
-ne 1285.
+ne 1376.
 (pdftex.def)             Requested size: 426.79134pt x 148.03899pt.
 
 
@@ -1390,10 +1502,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[37 <./Bilder/Minimierungsproblem.png> <./Bilder/alternativeFormulierungen.png>
+[42 <./Bilder/Minimierungsproblem.png> <./Bilder/alternativeFormulierungen.png>
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1292--1293
-
+Overfull \hbox (40.89488pt too wide) in paragraph at lines 1392--1393
+[]\T1/ptm/m/n/12 Optimierungsproblem: $\OML/ztmcm/m/it/12 H\OT1/ztmcm/m/n/12 (\
+OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 ) = \OML/ztmcm/m/it/12 V\OT1/ztmcm/m/n/
+12 (\OML/ztmcm/m/it/12 x[]; :::; x[]\OT1/ztmcm/m/n/12 ) \OMS/ztmcm/m/n/12 ! \OM
+L/ztmcm/m/it/12 max$\T1/ptm/m/n/12 , Ne-ben-bed.: $\OT1/ztmcm/m/n/12 (\OML/ztmc
+m/m/it/12 ; \OT1/ztmcm/m/n/12 ) \OMS/ztmcm/m/n/12 2 \OML/ztmcm/m/it/12 M; \OT
+1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 x[]; :::; x[]\OT1/ztmcm/m/n/12 ) \OMS/ztmcm/
+m/n/12 2
  []
 
 
@@ -1404,24 +1522,70 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38] (Zsmf.aux)
+[43]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[44]
+<Bilder/Marktportfolio.png, id=579, 1509.64pt x 932.48375pt>
+File: Bilder/Marktportfolio.png Graphic file (type png)
+<use Bilder/Marktportfolio.png>
+Package pdftex.def Info: Bilder/Marktportfolio.png  used on input line 1468.
+(pdftex.def)             Requested size: 426.79134pt x 263.61212pt.
+<Bilder/CAPMAnalytik.png, id=580, 1451.4225pt x 715.67375pt>
+File: Bilder/CAPMAnalytik.png Graphic file (type png)
+<use Bilder/CAPMAnalytik.png>
+Package pdftex.def Info: Bilder/CAPMAnalytik.png  used on input line 1475.
+(pdftex.def)             Requested size: 426.79134pt x 210.44487pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[45 <./Bilder/Marktportfolio.png>]
+Overfull \hbox (1.45662pt too wide) in paragraph at lines 1482--1483
+[]\T1/ptm/m/n/12 Menge al-ler op-ti-ma-len Port-fo-li-os $\OML/ztmcm/m/it/12 R$
+ \T1/ptm/m/n/12 (Wert-pa-pier-markt-li-nie): $\U/msb/m/n/12 E\OT1/ztmcm/m/n/12 
+[\OML/ztmcm/m/it/12 R\OT1/ztmcm/m/n/12 ] = \OML/ztmcm/m/it/12 r[] \OT1/ztmcm/m/
+n/12 + \OML/ztmcm/m/it/12 []\OT1/ztmcm/m/n/12 (\U/msb/m/n/12 E\OT1/ztmcm/m/n/1
+2 [\OML/ztmcm/m/it/12 R[]\OT1/ztmcm/m/n/12 ] \OMS/ztmcm/m/n/12  
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[46 <./Bilder/CAPMAnalytik.png>] (Zsmf.aux)
 
 Package rerunfilecheck Warning: File `Zsmf.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `Zsmf.out':
-(rerunfilecheck)             Before: E5FD5225D792EAA5F4F81B8040F72818;3479
-(rerunfilecheck)             After:  8B821978D356DFA9509FD64D3E0B8681;3977.
+(rerunfilecheck)             Before: F7A5A5DF7F2EA78D3B0FB3804B3EA149;3272
+(rerunfilecheck)             After:  F54848B855B512D8EC37D4172F71FDCE;4180.
  ) 
 Here is how much of TeX's memory you used:
- 15985 strings out of 479618
- 237702 string characters out of 2881547
+ 16089 strings out of 479618
+ 239880 string characters out of 2881547
  768579 words of memory out of 3000000
- 32573 multiletter control sequences out of 15000+200000
+ 32631 multiletter control sequences out of 15000+200000
  448336 words of font info for 98 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,11n,74p,339b,556s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,12n,74p,339b,556s stack positions out of 5000i,500n,10000p,200000b,50000s
 {A:/MikTex/fonts/enc/dvips/base/8r.enc}<A:/MikTex/fonts/type1/public/amsfonts
 /cm/cmex10.pfb><A:/MikTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><A:/MikTex/
 fonts/type1/public/amsfonts/cm/cmr10.pfb><A:/MikTex/fonts/type1/public/amsfonts
@@ -1429,9 +1593,9 @@ fonts/type1/public/amsfonts/cm/cmr10.pfb><A:/MikTex/fonts/type1/public/amsfonts
 kTex/fonts/type1/urw/symbol/usyr.pfb><A:/MikTex/fonts/type1/urw/symbol/usyr.pfb
 ><A:/MikTex/fonts/type1/urw/times/utmb8a.pfb><A:/MikTex/fonts/type1/urw/times/u
 tmr8a.pfb><A:/MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Zsmf.pdf (39 pages, 5146597 bytes).
+Output written on Zsmf.pdf (47 pages, 9736342 bytes).
 PDF statistics:
- 595 PDF objects out of 1000 (max. 8388607)
- 174 named destinations out of 1000 (max. 500000)
- 446 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 677 PDF objects out of 1000 (max. 8388607)
+ 208 named destinations out of 1000 (max. 500000)
+ 490 words of extra memory for PDF output out of 10000 (max. 10000000)
 
